@@ -1,4 +1,4 @@
-printf team project by Randall and Tigist
+printf team project by Randall and Tigist.
 Tasks:
 0. Write a function that produces output according to a format.
 	c, s and % conversion specifiers should be handled.
