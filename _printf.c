@@ -7,23 +7,23 @@
  */
 int _printf(const char *format, ...)
 {
-        int printf_char;
-        randy_t fxn_list[] = {
-                {"c", print_char},
-                {"s", print_string},
-                {"%", print_percent},
-                {"d", print_integer},
-                {"i", print_integer},
-                {NULL, NULL}
-        };
-        va_list arg_list;
+	int printf_char;
+	randy_t fxn_list[] = {
+		{"c", print_char},
+		{"s", print_string},
+		{"%", print_percent},
+		{"d", print_integer},
+		{"i", print_integer},
+		{NULL, NULL}
+	};
+	va_list arg_list;
 
-        if (format == NULL)
-                return (-1);
+	if (format == NULL)
+		return (-1);
 
-        va_start(arg_list, format);
+	va_start(arg_list, format);
 
-        printf_char = checker(format, fxn_list, arg_list);
-        va_end(arg_list);
-        return (printf_char);
+	printf_char = checker(format, fxn_list, arg_list);
+	va_end(arg_list);
+	return (printf_char);
 }

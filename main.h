@@ -1,28 +1,32 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdarg.h>
-#include <string.h>
 #include <stdio.h>
+#include <stdarg.h>
 #include <stdlib.h>
-#include <limits.h>
 #include <unistd.h>
 
 /**
- * struct printer - Struct to store function pointers for printing
- * @specifier: The format specifier
- * @print: Pointer to the corresponding print function
+ * struct randy - Defs a structure for symbols and functions
+ * @tg: format
+ * @fxn: associated function
  */
-typedef struct printer
+struct randy
 {
-const char *specifier;
-void (*print)(va_list args, int *index);
-} print_it;
+	char *tg;
+	int (*fxn)(va_list);
+};
 
-int printf(const char *format, ...);
-void print_char(va_list args, int *index);
-void print_str(va_list args, int *index);
-void print_per(va_list args, int *index);
-void print_int(va_list args, int *index);
+typedef struct randy randy_t;
+
+
+int _putchar(char c);
+int _printf(const char *format, ...);
+int checker(const char *format, randy_t fxn_list[], va_list arg_list);
+int print_char(va_list);
+int print_percent(va_list);
+int print_string(va_list);
+int print_number(va_list);
+int print_integer(va_list);
 
 #endif /* MAIN_H */
