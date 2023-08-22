@@ -3,7 +3,7 @@
 /**
  * checker - Receives the main string and parameters to be printed
  * @format: character string
- * fxn_list: Associated function list
+ * @fxn_list: Associated function list
  * @arg_list: List of arguments to be passsed
  * Return: Count of characters printed
  */
