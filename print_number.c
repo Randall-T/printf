@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number - prints number 
+ * print_number - prints number
  * @args: Lists arguments
  * Return: Number of arguments
  */
