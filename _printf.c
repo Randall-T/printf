@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_percent},
-		{"d", print_integer},
+		{"d", print_number},
 		{"i", print_integer},
 		{"b", print_binary},
 		{"u", unsigned_integer},
