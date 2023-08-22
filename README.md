@@ -8,6 +8,7 @@ Tasks:
 2. Handle the following custom conversion specifiers:
 	b: the unsigned int argument is converted to binary
 4. Use a local buffer of 1024 chars in order to call write as little as possible.
+5. 
 13. Handle the following custom conversion specifier:
 	r : prints the reversed string
 14. Handle the following custom conversion specifier:
