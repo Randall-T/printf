@@ -55,7 +55,7 @@ int print_reversed(va_list arg)
 
 /**
  * rot13 - Converts string to rot13
- * @lsit: string
+ * @list: string
  * Return: converted string
  */
 int rot13(va_list list)
