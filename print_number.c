@@ -36,3 +36,30 @@ int print_number(va_list args)
 
 	return (len);
 }
+/**
+ * print_unsigned_number - Prints unsigned number
+ * @n: Unsigned int
+ * Return: Numbers printed
+ */
+int print_unsigned_number(unsigned int n)
+{
+	int randy;
+	int len;
+	unsigned int num;
+
+	randy = 1;
+	len = 0;
+	num = n;
+
+	for (; num / randy > 9; )
+		randy *= 10;
+
+	for (; randy != 0; )
+	{
+		len += _putchar('0' + num / randy);
+		num %= randy;
+		randy /= 10;
+	}
+
+	return (len);
+}
