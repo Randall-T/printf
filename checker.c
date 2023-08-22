@@ -3,14 +3,15 @@
 /**
  * checker - Receives the main string and parameters to be printed
  * @format: character string
- * @fxn_list: associated function list
+ * @fxn_list: Associated function list
  * @arg_list: List of arguments to be passsed
  * Return: Count of characters printed
  */
 int checker(const char *format, randy_t fxn_list[], va_list arg_list)
 {
-	int i, j, ret_val, printf_char = 0;
+	int i, j, ret_val, printf_char;
 
+	printf_char = 0;
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
