@@ -22,7 +22,7 @@ int print_String(va_list Str)
 		if (S[t] < 32 || S[t] >= 127)
 		{
 			printf("\\x%02X", (unsigned char) S[t]);
-			count +=4;
+			count += 4;
 		}
 		else
 		{
