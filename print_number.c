@@ -63,18 +63,3 @@ int print_unsigned_number(unsigned int n)
 
 	return (len);
 }
-
-/**
- * int print_integer - Prints integer
- * @id: Arguments list
- * @Return: Count Characters
- */
-int print_integer(va_list id)
-{
-	int len;
-
-	len = print_number(id);
-
-	return (len);
-}
-
