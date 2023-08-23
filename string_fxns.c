@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * print_String - Function prints string and nonprintable ASCII
@@ -7,20 +8,21 @@
  */
 int print_String(va_list Str)
 {
-	unsigned int t = 0;
+	unsigned int t;
 	int count = 0;
 	char *S = va_arg(Str, char *);
 
 	if (S == NULL)
-		S = "(null)";
-	for (; S[t]; t++)
+	{
+		printf("null");
+		return (6);
+	}
+	for (t = 0; S[t] != '\0'; t++)
 	{
 		if (S[t] < 32 || S[t] >= 127)
 		{
-			_putchar('\\');
-			_putchar('x');
-			count += 2;
-			count += print_String(Str);
+			printf("\\x%02X", (unsigned char) S[t]);
+			count +=4;
 		}
 		else
 		{
