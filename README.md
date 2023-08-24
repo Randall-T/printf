@@ -35,6 +35,8 @@ Tasks:
 	h
 	Conversion specifiers to handle: d, i, u, o, x, X
 9. Handle the field width for non-custom conversion specifiers.
+10. Handle the precision for non-custom conversion specifiers.
+
 13. Handle the following custom conversion specifier:
 	r : prints the reversed string
 14. Handle the following custom conversion specifier:
