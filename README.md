@@ -26,6 +26,10 @@ Tasks:
 	You don’t have to handle field width
 	You don’t have to handle precision
 	You don’t have to handle the length modifiers
+7. Handle the following flag characters for non-custom conversion specifiers:
+	+
+	space
+	#
 13. Handle the following custom conversion specifier:
 	r : prints the reversed string
 14. Handle the following custom conversion specifier:
