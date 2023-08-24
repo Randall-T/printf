@@ -17,8 +17,11 @@ Tasks:
 	You don’t have to handle precision
 	You don’t have to handle the length modifiers
 4. Use a local buffer of 1024 chars in order to call write as little as possible.
-5. 
+5. Handle the following custom conversion specifier:
+	S : prints the string.
+	Non printable characters (0 < ASCII value < 32 or >= 127) are pr	inted this way: \x, followed by the ASCII code value in hexadeci	mal (upper case - always 2 characters)
 13. Handle the following custom conversion specifier:
 	r : prints the reversed string
 14. Handle the following custom conversion specifier:
 	R: prints the rot13'ed string
+
