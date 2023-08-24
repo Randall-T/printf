@@ -20,6 +20,12 @@ Tasks:
 5. Handle the following custom conversion specifier:
 	S : prints the string.
 	Non printable characters (0 < ASCII value < 32 or >= 127) are pr	inted this way: \x, followed by the ASCII code value in hexadeci	mal (upper case - always 2 characters)
+6. Handle the following conversion specifier: p.
+
+	You don’t have to handle the flag characters
+	You don’t have to handle field width
+	You don’t have to handle precision
+	You don’t have to handle the length modifiers
 13. Handle the following custom conversion specifier:
 	r : prints the reversed string
 14. Handle the following custom conversion specifier:
