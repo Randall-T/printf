@@ -43,5 +43,5 @@ char *rev_string(char *);
 void put_base(char *str);
 char *_memcpy(char *dest, char *src, unsigned int n);
 int print_unsigned_number(unsigned int);
-void myFunction(int arg1, float arg2);
+
 #endif /* MAIN_H */
